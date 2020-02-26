@@ -1,0 +1,375 @@
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "button.scss";
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+a:link {
+    text-decoration: none
+}
+
+input:focus,
+button:focus,
+a:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
+html {
+    min-height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+}
+
+h1,
+a,
+a:hover {
+    color: $white!important;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    margin-bottom: 300px;
+    // @include gob-font-300;
+}
+
+.index-modelo {
+    background-color: #72b500;
+}
+
+.title-welcome {
+    font-size: $font-dipreca-big;
+    color: $blue-button;
+    // @include gob-font-600;
+}
+
+.title-modelo {
+    height: 142px;
+    background-color: #464646;
+    margin-top: -65px
+}
+
+.img-title {
+    width: 324px;
+    height: 364px;
+    position: fixed;
+    left: 690px;
+    top: 180px;
+}
+
+.img-need {
+    width: 306px;
+    height: 344px;
+    margin-top: -70px;
+}
+
+.tittle-dipreca {
+    font-size: $font-dipreca;
+    color: $blue-button;
+    // @include gob-font-600;
+}
+
+.welcome {
+    // @include gob-font-100;
+    color: $blue-button;
+    font-size: $font-dipreca-big;
+}
+
+hr {
+    height: 0.5rem;
+    background-color: $blue-button;
+}
+
+footer {
+    position: fixed;
+    // background-color: $primary-color;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    text-align: right;
+    color: white;
+    z-index: 0;
+    img {
+        width: 200px;
+        margin-right: 20px;
+    }
+}
+
+.img-background-footer {
+    background-image: url(../img/bottom-modulo-generico.jpg);
+    height: 377px;
+    width: 100%;
+    position: fixed;
+    display: inline;
+    z-index: 0;
+}
+
+.logo {
+    width: 100%;
+    // margin-bottom: 120%;
+    height: 377px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 50px;
+    .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 50px;
+        font-size: $font-dipreca;
+        border: 3px solid;
+        color: $grey-font;
+        // @include gob-font-100;
+    }
+    .form-control:focus {
+        z-index: 2;
+    }
+    .btn-login {
+        width: 250px;
+        height: 75px;
+        margin-top: 10%;
+        border-radius: 25px;
+        background-color: $blue-button;
+        border: 5px solid $blue-button-dark;
+        color: $text-button;
+        font-size: $font-dipreca;
+        // @include gob-font-600;
+    }
+}
+
+.modal-backdrop {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal {
+    &-content {
+        border: 19px solid #77B700;
+        margin-top: 60%;
+        width: 120%;
+        margin-left: -10%
+    }
+    &-dialog {
+        max-width: 110%!important;
+    }
+    p {
+        color: $blue-button;
+        font-size: $font-button;
+        // @include gob-font-600;
+    }
+    span {
+        // @include gob-font-100;
+        font-size: $font-dipreca;
+        color: $grey-font
+    }
+}
+
+.menu-text {
+    // @include gob-font-600;
+    font-size: $font-button;
+    color: $grey-font
+}
+
+.select-detail {
+    font-size: $font-dipreca-big;
+    color: $grey-font;
+    &:active {
+        color: $blue-button;
+        transform: scale(1.2)
+    }
+}
+
+.spinner-border {
+    width: 10rem;
+    height: 10rem;
+    border: 2.25em solid $blue-button;
+    border-top-color: $blue-button;
+    border-top-style: solid;
+    border-top-width: 2.25em;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-right-width: 2.25em;
+    border-bottom-color: $blue-button;
+    border-bottom-style: solid;
+    border-bottom-width: 2.25em;
+    border-left-color: $blue-button;
+    border-left-style: solid;
+    border-left-width: 2.25em;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.powered {
+    position: absolute;
+    text-align: right;
+    margin-left: 210px;
+    bottom: 10px;
+    ;
+}
+
+.thin {
+    font-family: roboto;
+    font-weight: 100;
+}
+
+.light {
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.regular {
+    font-family: roboto;
+    font-weight: 400;
+}
+
+.medium {
+    font-family: roboto;
+    font-weight: 500;
+}
+
+.bold {
+    font-family: roboto;
+    font-weight: 700;
+}
+
+.black {
+    font-family: roboto;
+    font-weight: 900;
+}
+
+.din-black {
+    font-family: 'DIN-BlackAlternate';
+}
+
+.grey {
+    color: #464646!important
+}
+
+.btn-serie {
+    height: 145px;
+    width: 607px;
+    border: none;
+    border-bottom: 12px solid #568400;
+    border-radius: 17px;
+    color: $white;
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 41.7px;
+    background-color: #77b700;
+    margin-top: 38px;
+}
+
+.btn-series-print {
+    background-color: #77b700;
+    height: 88px;
+    width: 100%;
+    border-radius: 16px;
+    color: $white;
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 30px;
+    border: none;
+    border-bottom: 12px solid #568400;
+    line-height: 95%;
+    margin-bottom: 17px;
+    vertical-align: middle;
+    span {
+        display: inline-block;
+        line-height: normal;
+    }
+}
+
+.btn-series-print-dark {
+    background-color: #A1A1A1;
+    height: 88px;
+    width: 100%;
+    border-radius: 16px;
+    color: $white;
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 30px;
+    border: none;
+    border-bottom: 12px solid #6A6A6A;
+    line-height: 95%;
+    margin-bottom: 17px;
+    vertical-align: middle;
+    span {
+        display: inline-block;
+        line-height: normal;
+    }
+}
+
+.box-texto {
+    height: 171px;
+    width: 100%;
+}
+
+.botonera {
+    position: fixed;
+    z-index: 100!important;
+    bottom: 97px;
+}
+
+.box-container {
+    max-height: 900px;
+    overflow-y: auto;
+    i {
+        padding-left: 20px;
+    }
+}
+
+.bl-solid {
+    border-left: 1px solid white;
+}
+
+.line-fix {
+    position: absolute;
+    right: 100px;
+    top: -10px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #77b700;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #77b700;
+}
+
+@import "responsive.scss";
