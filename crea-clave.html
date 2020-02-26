@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="10;url=index.html" /> -->
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+
+    <div class="row text-center">
+        <div class="col-12">
+            <div class="logo">
+                <img src="img/top-modulo.jpg">
+            </div>
+        </div>
+
+        <div class="col-12 text-center">
+            <img src="img/crea-clave.png ">
+
+        </div>
+        <div class="col-6 offset-3 mt-5">
+            <h1 class="din-black grey">Ingresa tu Clave</h1>
+            <input>
+            <h1 class="din-black grey mt-3">Confirma tu Clave</h1>
+            <input>
+        </div>
+        <div class="col-4 offset-4 mt-5">
+            <button class="btn-series-print" data-toggle="modal" data-target="#print-text">Aceptar</button>
+            <button class="btn-series-print-dark mt-2" data-toggle="modal" data-target="#print-text1">Borrar</button>
+        </div>
+        <div class="col-12 mt-5">
+            <img src="img/adv-clave.png">
+        </div>
+
+
+    </div>
+    <div class="row text-center botonera w-100">
+        <div class="col-8 offset-2">
+            <div class="row">
+                <div class="col-6">
+                    <a href="login.html"><img src="img/btn-volver.png" class=""></a>
+                </div>
+                <div class="col-6">
+                    <a href="clave-cambiada.html"><img src="img/btn-salir.png" class=""></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12">
+
+        </div>
+    </div>
+    <div class="modal fade" id="print-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog alert" role="document">
+            <div class="modal-content text-center">
+
+                <div class="modal-body">
+                    <div class="row  text-center">
+                        <div class="col-12 mb-4 mt-1">
+                            <img src="img/icon-alert.png"></div>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="din-black grey display-4">La Clave ingresadas<br> no coinciden</h1>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="din-black light-grey">Inténtalo Nuevamente</h1>
+                    </div>
+                    <div class="col-6 offset-3 mt-5">
+                        <button class="btn-series-print" data-dismiss="modal">Volver</button>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="print-text1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog alert" role="document">
+            <div class="modal-content text-center">
+
+                <div class="modal-body">
+                    <div class="row  text-center">
+                        <div class="col-12 mb-4 mt-1">
+                            <img src="img/icon-alert.png"></div>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="din-black grey display-4">La Clave no cumple con:</h1>
+                    </div>
+                    <div class="col-10 offset-2 text-left">
+                        <p><img src="img/x.png"> Incluir una Mayúscula</p>
+                        <p><img src="img/x.png"> Incluir una Minúscula</p>
+                        <p><img src="img/x.png"> Incluir un numero</p>
+                        <p><img src="img/x.png"> Entre 6 y 8 letras y números</p>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="din-black light-grey">Inténtalo Nuevamente</h1>
+                    </div>
+                    <div class="col-6 offset-3 mt-5">
+                        <button class="btn-series-print" data-dismiss="modal">Volver</button>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="img-background-footer">
+    </footer>
+
+
+    <script src="js/jquery-1.11.1.js "></script>
+    <script src="js/bootstrap/bootstrap.min.js "></script>
+    <script src="js/createjs.min.js "></script>
+
+</body>
+
+</html>
