@@ -40,12 +40,6 @@
     src: url("../css/roboto/Roboto-Black.woff") format("woff");
 }
 
-@font-face {
-    font-family: 'DIN-BlackAlternate';
-    font-weight: bold;
-    src: url("../css/dinalternate/DIN-BlackAlternate-Regular.woff") format("woff");
-}
-
 .fas {
     font-family: "Font Awesome 5 Free Solid", "Font Awesome 5 Free" !important;
 }
