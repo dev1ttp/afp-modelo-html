@@ -348,6 +348,11 @@ input {
   text-align: center;
   font-family: 'DIN-BlackAlternate'; }
 
+button:disabled {
+  background-color: #E1E1E1;
+  border-bottom: 12px solid #BABABA;
+  color: darkgrey; }
+
 /* width */
 ::-webkit-scrollbar {
   width: 20px; }
