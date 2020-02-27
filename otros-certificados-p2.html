@@ -22,9 +22,9 @@
                 <img src="img/top-modulo.jpg">
             </div>
         </div>
-        <div class="col-8 pl-0">
-            <div class="title-modelo text-left pl-5">
-                <h1 class="din-black pt-2 pl-5 big">Certificado de<br> Cotizaciones</h1>
+        <div class="col-8 pl-0 ">
+            <div class="title-modelo">
+                <h1 class="display-3 din-black pt-4">Otros Certificados</h1>
 
             </div>
         </div>
@@ -34,40 +34,17 @@
     </div>
 
     <div class="row">
-        <div class="col-6 offset-2">
-            <div class="box-texto mt-4 ">
-
-
-            </div>
-        </div>
-        <div class="col-8 offset-2 mt-n5 text-center">
-            <h1 class="din-black grey display-4">Tipo de Producto</h1>
-            <select>
-<option>Prueba 1</option>
-<option>Prueba 2</option>
-<option>Prueba 3</option>
-<option>Prueba 4</option>
-            </select>
-
+        <div class="box-texto">
 
         </div>
-        <div class="col-10 offset-1">
-            <div class="row mt-5">
-                <div class="col-12 text-center mt-5">
-                    <h1 class="din-black grey display-4">Numero de Periodos</h1>
-                </div>
-                <div class="col-6"><button class="btn-serie w-100" data-toggle="modal" data-target="#print-text">12 Meses</button></div>
-                <div class="col-6"><button class="btn-serie w-100" data-toggle="modal" data-target="#print-text">24 Meses</button></div>
-                <div class="col-6"><button class="btn-serie w-100" data-toggle="modal" data-target="#print-text">36 Meses</button></div>
-                <div class="col-6"><button class="btn-serie w-100" data-toggle="modal" data-target="#print-text">Todos</button></div>
-            </div>
-        </div>
 
 
-        <div class="col-8 offset-2 text-center box-container">
-
-
-
+        <div class="col-12 text-center mt-n5">
+            <button class="btn-serie " onclick="window.location='certificado-remuneracion.html' ">Certificado Remuneraciones</button>
+            <button class="btn-serie " data-toggle="modal" data-target="#print-text">Antecedentes Previsonales</button>
+            <button class="btn-serie " onclick="window.location='ultimos-movimientos.html' ">Últimos Movimientos</button>
+            <button class="btn-serie" data-toggle="modal" data-target="#print-text">Vacaciones Progresivas</button>
+            <button class="btn-serie" data-toggle="modal" data-target="#print-text">Cartola Cuatrimestal</button>
         </div>
     </div>
 
@@ -89,6 +66,7 @@
     </div>
     <footer class="img-background-footer">
     </footer>
+
     <div class="modal fade" id="print-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog print" role="document">
             <div class="modal-content text-center">
@@ -103,9 +81,11 @@
         </div>
     </div>
 
+
     <script src="js/jquery-1.11.1.js "></script>
     <script src="js/bootstrap/bootstrap.min.js "></script>
     <script src="js/createjs.min.js "></script>
+
     <script>
         $(function() {
             $('#print-text, #print').on('show.bs.modal', function() {
@@ -117,6 +97,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

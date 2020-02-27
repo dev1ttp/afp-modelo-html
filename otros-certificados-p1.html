@@ -37,25 +37,65 @@
         <div class="box-texto">
 
         </div>
+
+
         <div class="col-12 text-center">
             <button class="btn-serie " onclick="window.location='crea-clave.html' ">Clave Web</button>
             <button class="btn-serie " onclick="window.location='certificado-cotizaciones.html' ">Certificado de Cotización</button>
-            <button class="btn-serie ">Certificado de Afiliación</button>
-            <button class="btn-serie" onclick="window.location='folletos.html' ">Otros Certificados</button>
+            <button class="btn-serie " data-toggle="modal" data-target="#print-text">Certificado de Afiliación</button>
+            <button class="btn-serie" onclick="window.location='otros-certificados-p2.html' ">Otros Certificados</button>
         </div>
     </div>
 
     <div class="row text-center botonera w-100">
+        <div class="col-8 offset-2">
+            <div class="row">
+                <div class="col-6">
+                    <a href="login.html"><img src="img/btn-volver.png" class=""></a>
+                </div>
+                <div class="col-6">
+                    <a href="gracias.html"><img src="img/btn-salir.png" class=""></a>
+                </div>
+            </div>
+
+        </div>
         <div class="col-12">
-            <a href="gracias.html"><img src="img/salir-big.png" class=""></a>
+
         </div>
     </div>
     <footer class="img-background-footer">
     </footer>
 
-    <script src="js/bootstrap/bootstrap.min.js "></script>
+    <div class="modal fade" id="print-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog print" role="document">
+            <div class="modal-content text-center">
+
+                <div class="modal-body">
+                    <img src="img/print.gif">
+                    <h1 class="din-black grey ">Imprimiendo</h1>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/jquery-1.11.1.js "></script>
+    <script src="js/bootstrap/bootstrap.min.js "></script>
     <script src="js/createjs.min.js "></script>
+
+    <script>
+        $(function() {
+            $('#print-text, #print').on('show.bs.modal', function() {
+                var myModal = $(this);
+                clearTimeout(myModal.data('hideInterval'));
+                myModal.data('hideInterval', setTimeout(function() {
+                    window.location = 'necesitas-algo.html';
+                }, 3000));
+            });
+        });
+    </script>
 
 </body>
 
