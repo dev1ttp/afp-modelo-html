@@ -395,6 +395,26 @@ select {
   font-size: 67px;
   line-height: 89%; }
 
+.big-2 {
+  font-size: 80px;
+  line-height: 89%; }
+
+.btn-login-number {
+  font-family: roboto;
+  font-weight: 500;
+  background-color: #464646;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  width: 92px;
+  font-size: 45px;
+  padding-top: 20%;
+  height: 92px;
+  margin-top: 20px; }
+
 @media only screen and (max-width: 1079px) and (min-width: 981px) {
   body {
     zoom: 80%; }
